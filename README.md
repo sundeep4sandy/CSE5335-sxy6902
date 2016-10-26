@@ -1,39 +1,42 @@
-# node-js-getting-started
+# cse5335-sxy6902-1
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+##### - Sandeep Yerramsetti (sxy6902)
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+### Server Framework:
 
-## Running Locally
+- The Frameworks which was used on the server side are node.js and express.js. The node.js is a event based framework and all the Ajax calls can be done on the server side it also utilizes the V8 JavaScript engine
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+### client Framework:
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
+- The Frameworks which was used on the client side are Angular.js and html. It follows the MVC framework and it is east to write.
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+### Aspects of implementation which were easy 
 
-## Deploying to Heroku
+- Even though I am a newbie to web development, I found Ajax calls and server side implementation to be easy then compared to the client side.
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
+### Aspects of implementation which were hard
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+- The aspects which were considered to be challenging are the deployment of application in the heroku server and the implementation of google maps using the latitude and logitude values in the json data.
 
-## Documentation
+### What components OTHER than your client and server framework did you install,if any, and if so, what is their purpose for your solution?
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+- I've installed two components other than the framework.
+	1. Heroku toolbelt - which is used to for the heroku server so that it can communicate with windows.
+	2. git-hub(desktop top) - which is used to update the git repository.
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+
+### What Ubuntu commands are required to deploy and run your server
+
+- They are 10 commands which are used for the deployment and running your server:
+	1. heroku login							- To login into the serever.
+	2. heroku git:clone	-a cse5335-sxy6902	- To clone the source code to your local machine.
+	3. cd cse5335-sxy6902					- To change the project directory.
+	4. heroku create						- Creates app which is to be deployed.
+	5. git status							- To check any changes.
+	6. git add .							- To update current content.
+	7. git commit -am "Message"				- To record changes in the repository.
+	8. git push heroku master				- pushes the code in your directory to heroku repository.
+	9. heroku ps:scale web=1				- To create a instance for the application.
+	10.heroku open							- To open the application.
+	11.heroku logs --tail					- To view the logs of the application
+	
