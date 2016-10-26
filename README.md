@@ -27,7 +27,7 @@
 
 ### What Ubuntu commands are required to deploy and run your server
 
-- They are 10 commands which are used for the deployment and running your server:
+- They are 11 commands which are used for the deployment and running your server:
 	1. heroku login							- To login into the serever.
 	2. heroku git:clone	-a cse5335-sxy6902	- To clone the source code to your local machine.
 	3. cd cse5335-sxy6902					- To change the project directory.
@@ -36,7 +36,7 @@
 	6. git add .							- To update current content.
 	7. git commit -am "Message"				- To record changes in the repository.
 	8. git push heroku master				- pushes the code in your directory to heroku repository.
-	9. heroku ps:scale web=1				- To create a instance for the application.
-	10.heroku open							- To open the application.
-	11.heroku logs --tail					- To view the logs of the application
+	9. heroku ps:scale web=1				- To create a instance for the application. 
+	10. heroku open							- To open the application.
+	11. heroku logs --tail					- To view the logs of the application.
 	
